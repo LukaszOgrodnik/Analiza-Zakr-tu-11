@@ -370,7 +370,7 @@ const calculatePowerTable55 = () => {
     for (let speed = maxSpeed; speed >= 30; speed -= 10) {
       let row = [];
       row.push(speed);
-      let Nr=Px*0.85;
+      let Nr=(Px*0.85).toFixed(2);
       row.push(Nr);
       let Cz = (2 * mass * g) / (density * CzMax * speed ** 2) * (1 / Math.cos(1.04719755));
       row.push(Cz);
